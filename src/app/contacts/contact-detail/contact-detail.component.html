@@ -1,14 +1,14 @@
 <div class="row">
    <div class="col-xs-12 panel panel-default">
       <div class="panel-header">
-         <p>{{ contacts.name }}</p>
-         <img src="{{ contacts.imageUrl }}">
+         <p>{{ contact.name }}</p>
+         <img src="{{ contact.imageUrl }}">
          <a href="#" class="btn btn-primary">Edit Contact</a>
          <a href="#" class="btn btn-danger">Delete Contact</a>
       </div>
       <div class="panel-body">
-         <p>Email:</p>
-         <p>Phone:</p>
+         <p>Email: {{ contact.email }}</p>
+         <p>Phone: {{ contact.phone }}</p>
       </div>
    </div>
 </div>
