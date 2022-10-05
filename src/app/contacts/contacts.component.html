@@ -5,10 +5,7 @@
    </div>
    <div class="col-md-4">
       <h2><app-contact-detail
-         *ngIf="selectedContact; else infoText"
+         *ngIf="selectedContact"
          [contact]="selectedContact"></app-contact-detail></h2>
-         <ng-template #infoText>
-            <p>Please select a Contact!</p>
-         </ng-template>
    </div>
 </div>
