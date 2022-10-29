@@ -8,6 +8,8 @@ import { Contact } from '../contact.model';
 })
 export class ContactItemComponent implements OnInit {
   @Input() contact: Contact;
+  @Input() index: number;
+
   @Output() contactSelected = new EventEmitter<void>();
 
   constructor() { }
