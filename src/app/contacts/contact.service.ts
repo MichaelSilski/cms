@@ -40,7 +40,7 @@ export class ContactService {
     return maxId;
   }
 
-  addcontact(newContact: Contact) {
+  addContact(newContact: Contact) {
     if (newContact === null) {
       return;
     }
