@@ -18,10 +18,11 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { AppRoutingModule } from './app-routing.module';
 import { DocumentEditComponent } from './documents/document-edit/document-edit.component';
 import { ContactEditComponent } from './contacts/contact-edit/contact-edit.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { MessageService } from './messages/message.service';
 import { DocumentService } from './documents/document.service';
 import { ContactService } from './contacts/contact.service';
+import { HttpClientModule } from '@angular/common/http';
 import { DndModule } from 'ng2-dnd';
 
 @NgModule({
@@ -45,9 +46,9 @@ import { DndModule } from 'ng2-dnd';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule,
     DndModule.forRoot()
   ],
   providers: [MessageService, DocumentService, ContactService],
