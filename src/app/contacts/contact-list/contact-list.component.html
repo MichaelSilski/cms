@@ -22,7 +22,7 @@
 <div class="row">
   <div class="col-xs-12">
       <app-contact-item 
-         *ngFor="let contactEl of contacts | contactsFilter:'term'
+         *ngFor="let contactEl of contacts | contactsFilter:'searchBox';
          let i = index" 
          [contact]="contactEl" [index]="i">
       </app-contact-item>
